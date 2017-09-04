@@ -33,7 +33,7 @@ class OauthVkClientFactory extends OauthClientFactory
         $this->request = $requestStack->getCurrentRequest();
     }
 
-    public function createClient()
+    public function create()
     {
         return new OauthVkClient($this->container, $this->request);
     }

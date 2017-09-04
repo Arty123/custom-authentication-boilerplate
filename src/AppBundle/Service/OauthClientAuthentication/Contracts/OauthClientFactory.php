@@ -11,5 +11,5 @@ namespace AppBundle\Service\OauthClientAuthentication\Contracts;
 
 abstract class OauthClientFactory
 {
-    public abstract function createClient();
+    public abstract function create();
 }

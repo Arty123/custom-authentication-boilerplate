@@ -21,7 +21,7 @@ class VkConnectController extends Controller
      */
     public function connectVkAction(Request $request)
     {
-        $client = $this->get('app.oauth.vk_client_factory')->createClient();
+        $client = $this->get('app.oauth.vk_client_factory')->create();
         // redirect to Vk
         return ($client->authorize(['friends', 'phone', 'contacts', 'photos']));
     }

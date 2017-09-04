@@ -64,7 +64,7 @@ class VkAuthenticator extends AbstractGuardAuthenticator
      */
     public function __construct(OauthClientFactory $clientFactory, Container $container, EntityManager $em, MailHelperFactory $mailHelperFactory, Router $router)
     {
-        $this->client = $clientFactory->createClient();
+        $this->client = $clientFactory->create();
         $this->container = $container;
         $this->em = $em;
         $this->mailHelper = $mailHelperFactory->create();

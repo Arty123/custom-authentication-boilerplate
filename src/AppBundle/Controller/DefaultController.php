@@ -25,6 +25,6 @@ class DefaultController extends Controller
      */
     public function adminAction(Request $request)
     {
-        echo 'protected admin page'; die;
+        echo 'Protected admin page'; die;
     }
 }
